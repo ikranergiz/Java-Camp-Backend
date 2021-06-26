@@ -42,7 +42,7 @@ public class Product {
 		@Column(name="quantity_per_unit")
 		private String quantityPerUnit;
 
-		@ManyToOne
+		@ManyToOne()
 		@JoinColumn(name = "category_id")
-		private Category category;
+		private Category category;//dao da categoryId yazdığımız için hata aldık
 }
